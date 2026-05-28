@@ -13,7 +13,7 @@ export function ReportSummaryCards({ summary }: ReportSummaryCardsProps) {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between rounded-[1.35rem] border border-white/10 bg-white/[0.055] p-4">
+      <div className="flex items-center justify-between --[1.35rem] border border-white/10 bg-white/[0.055] p-4">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">Nivel de riesgo</p>
           <p className="mt-1 text-lg font-bold text-white">Resumen del periodo</p>

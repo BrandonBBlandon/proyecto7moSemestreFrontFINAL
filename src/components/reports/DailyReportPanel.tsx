@@ -47,7 +47,7 @@ export function DailyReportPanel() {
 
   return (
     <div className="space-y-4">
-      <form onSubmit={onSubmit} className="glass-panel flex flex-col gap-3 rounded-[1.75rem] p-4 sm:flex-row">
+      <form onSubmit={onSubmit} className="glass-panel flex flex-col gap-3 --[1.75rem] p-4 sm:flex-row">
         <label className="flex-1">
           <span className="mb-2 flex items-center gap-2 text-sm font-medium text-slate-300">
             <CalendarDays className="h-4 w-4" />
@@ -57,12 +57,12 @@ export function DailyReportPanel() {
             type="date"
             value={date}
             onChange={(event) => setDate(event.target.value)}
-            className="w-full rounded-2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
+            className="w-full --2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
           />
         </label>
         <button
           type="submit"
-          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-teal-300 px-5 py-3 font-bold text-slate-950 transition hover:bg-teal-200 sm:self-end"
+          className="inline-flex items-center justify-center gap-2 --2xl bg-teal-300 px-5 py-3 font-bold text-slate-950 transition hover:bg-teal-200 sm:self-end"
         >
           <Search className="h-4 w-4" />
           Consultar

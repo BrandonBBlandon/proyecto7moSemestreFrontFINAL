@@ -54,7 +54,7 @@ export function MonthlyReportPanel() {
 
   return (
     <div className="space-y-4">
-      <form onSubmit={onSubmit} className="glass-panel grid gap-3 rounded-[1.75rem] p-4 sm:grid-cols-[1fr_1fr_auto]">
+      <form onSubmit={onSubmit} className="glass-panel grid gap-3 --[1.75rem] p-4 sm:grid-cols-[1fr_1fr_auto]">
         <label>
           <span className="mb-2 block text-sm font-medium text-slate-300">Año</span>
           <input
@@ -63,7 +63,7 @@ export function MonthlyReportPanel() {
             max={2100}
             value={year}
             onChange={(event) => setYear(Number(event.target.value))}
-            className="w-full rounded-2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
+            className="w-full --2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
           />
         </label>
         <label>
@@ -71,7 +71,7 @@ export function MonthlyReportPanel() {
           <select
             value={month}
             onChange={(event) => setMonth(Number(event.target.value))}
-            className="w-full rounded-2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
+            className="w-full --2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
           >
             {Array.from({ length: 12 }, (_, index) => index + 1).map((value) => (
               <option key={value} value={value}>
@@ -82,7 +82,7 @@ export function MonthlyReportPanel() {
         </label>
         <button
           type="submit"
-          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-teal-300 px-5 py-3 font-bold text-slate-950 transition hover:bg-teal-200 sm:self-end"
+          className="inline-flex items-center justify-center gap-2 --2xl bg-teal-300 px-5 py-3 font-bold text-slate-950 transition hover:bg-teal-200 sm:self-end"
         >
           <Search className="h-4 w-4" />
           Consultar

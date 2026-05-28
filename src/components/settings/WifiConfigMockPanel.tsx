@@ -14,15 +14,15 @@ export function WifiConfigMockPanel() {
   }
 
   return (
-    <article className="glass-panel rounded-[1.75rem] p-4">
+    <article className="glass-panel --[1.75rem] p-4">
       <div className="flex gap-3">
-        <span className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-teal-100">
+        <span className="grid h-11 w-11 place-items-center --2xl bg-white/10 text-teal-100">
           <Wifi className="h-5 w-5" />
         </span>
         <div>
           <h2 className="text-lg font-bold text-white">Red Wi-Fi</h2>
           <p className="text-sm leading-6 text-slate-400">
-            Prototipo visual. Aún no existe un endpoint real para enviar esta configuración al ESP32.
+            onfiguración al ESP32.
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ export function WifiConfigMockPanel() {
               setSaved(false);
             }}
             placeholder="Nombre de red"
-            className="w-full rounded-2xl border-white/10 bg-slate-950/70 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
+            className="w-full --2xl border-white/10 bg-slate-950/70 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
           />
         </label>
         <label className="block">
@@ -50,16 +50,16 @@ export function WifiConfigMockPanel() {
               setSaved(false);
             }}
             placeholder="Clave Wi-Fi"
-            className="w-full rounded-2xl border-white/10 bg-slate-950/70 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
+            className="w-full --2xl border-white/10 bg-slate-950/70 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
           />
         </label>
         <button
           type="submit"
-          className="w-full rounded-2xl bg-white/10 px-5 py-3 font-bold text-white transition hover:bg-white/15"
+          className="w-full --2xl bg-white/10 px-5 py-3 font-bold text-white transition hover:bg-white/15"
         >
           Guardar configuración
         </button>
-        {saved ? <p className="text-sm text-emerald-200">Configuración guardada solo en la vista actual.</p> : null}
+        {saved ? <p className="text-sm text-emerald-200">Configuración guardada </p> : null}
       </form>
     </article>
   );

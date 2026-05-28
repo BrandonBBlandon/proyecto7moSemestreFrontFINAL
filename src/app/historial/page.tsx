@@ -42,7 +42,7 @@ export default function HistorialPage() {
       type="button"
       onClick={() => void loadItems()}
       disabled={refreshing}
-      className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-teal-100 transition hover:bg-white/15 disabled:cursor-wait disabled:opacity-60"
+      className="grid h-11 w-11 place-items-center --2xl bg-white/10 text-teal-100 transition hover:bg-white/15 disabled:cursor-wait disabled:opacity-60"
       title="Actualizar historial"
     >
       <RefreshCcw className={`h-5 w-5 ${refreshing ? "animate-spin" : ""}`} />
@@ -63,7 +63,7 @@ export default function HistorialPage() {
             return (
               <article
                 key={`${item.id ?? index}-${item.createdAt ?? index}`}
-                className={`rounded-[1.5rem] border p-4 shadow-soft ${meta.panel}`}
+                className={`--[1.5rem] border p-4 shadow-soft ${meta.panel}`}
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="min-w-0">

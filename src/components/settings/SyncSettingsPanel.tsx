@@ -51,7 +51,7 @@ export function SyncSettingsPanel() {
   }
 
   return (
-    <article className="glass-panel rounded-[1.75rem] p-4">
+    <article className="glass-panel --[1.75rem] p-4">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h2 className="text-lg font-bold text-white">Sincronización</h2>
@@ -60,7 +60,7 @@ export function SyncSettingsPanel() {
         <button
           type="button"
           onClick={() => void testConnection()}
-          className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-teal-100 transition hover:bg-white/15"
+          className="grid h-11 w-11 place-items-center --2xl bg-white/10 text-teal-100 transition hover:bg-white/15"
           title="Probar conexión"
         >
           <RotateCcw className="h-5 w-5" />
@@ -68,13 +68,13 @@ export function SyncSettingsPanel() {
       </div>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
-        <div className="rounded-2xl bg-white/[0.055] p-4">
+        <div className="--2xl bg-white/[0.055] p-4">
           <p className="text-sm text-slate-400">Backend</p>
           <p className={backendOk ? "font-bold text-emerald-200" : "font-bold text-red-200"}>
             {backendOk === null ? "Sin probar" : backendOk ? "Disponible" : "No disponible"}
           </p>
         </div>
-        <div className="rounded-2xl bg-white/[0.055] p-4">
+        <div className="--2xl bg-white/[0.055] p-4">
           <p className="text-sm text-slate-400">Base de datos</p>
           <p className={dbOk ? "font-bold text-emerald-200" : "font-bold text-red-200"}>
             {dbOk === null ? "Sin probar" : dbOk ? "Disponible" : "No disponible"}
@@ -91,12 +91,12 @@ export function SyncSettingsPanel() {
             max={120}
             value={interval}
             onChange={(event) => setIntervalValue(Number(event.target.value))}
-            className="min-w-0 flex-1 rounded-2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
+            className="min-w-0 flex-1 --2xl border-white/10 bg-slate-950/70 text-white focus:border-teal-300 focus:ring-teal-300"
           />
           <button
             type="button"
             onClick={saveInterval}
-            className="inline-flex items-center gap-2 rounded-2xl bg-teal-300 px-4 font-bold text-slate-950 transition hover:bg-teal-200"
+            className="inline-flex items-center gap-2 --2xl bg-teal-300 px-4 font-bold text-slate-950 transition hover:bg-teal-200"
           >
             <Save className="h-4 w-4" />
             Guardar

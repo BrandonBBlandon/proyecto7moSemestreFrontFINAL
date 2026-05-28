@@ -24,7 +24,7 @@ export function SensorGauge({ monitoring }: SensorGaugeProps) {
           background: `conic-gradient(${meta.chart} ${percentage}%, rgba(148, 163, 184, 0.14) ${percentage}% 100%)`,
         }}
       >
-        <div className="grid h-40 w-40 place-items-center rounded-full bg-slate-950/92 text-center">
+        <div className="grid h-40 w-40 place-items-center --full bg-slate-950/92 text-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">MQ-2</p>
             <p className={clsx("mt-1 text-5xl font-black", meta.tone)}>{value}</p>
@@ -33,11 +33,11 @@ export function SensorGauge({ monitoring }: SensorGaugeProps) {
         </div>
       </div>
       <div className="mt-4 grid w-full grid-cols-2 gap-3 text-center">
-        <div className="rounded-2xl bg-white/[0.055] px-3 py-2">
+        <div className="--2xl bg-white/[0.055] px-3 py-2">
           <p className="text-xs text-slate-400">Warning</p>
           <p className="font-semibold text-amber-100">{warning ?? "Sin dato"}</p>
         </div>
-        <div className="rounded-2xl bg-white/[0.055] px-3 py-2">
+        <div className="--2xl bg-white/[0.055] px-3 py-2">
           <p className="text-xs text-slate-400">Alarm</p>
           <p className="font-semibold text-red-100">{alarm ?? "Sin dato"}</p>
         </div>

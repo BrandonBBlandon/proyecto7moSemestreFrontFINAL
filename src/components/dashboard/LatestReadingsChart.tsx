@@ -24,7 +24,7 @@ export function LatestReadingsChart({ readings }: LatestReadingsChartProps) {
   }
 
   return (
-    <article className="glass-panel rounded-[1.75rem] p-4">
+    <article className="glass-panel --[1.75rem] p-4">
       <div className="mb-4">
         <h2 className="text-lg font-bold text-white">Últimas lecturas</h2>
         <p className="text-sm text-slate-400">Evolución reciente del valor MQ-2</p>

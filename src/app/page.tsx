@@ -20,7 +20,7 @@ export default function SplashPage() {
   return (
     <main className="grid min-h-dvh place-items-center px-6">
       <section className="animate-[fadeIn_900ms_ease-out] text-center">
-        <div className="mx-auto grid h-24 w-24 place-items-center rounded-[2rem] border border-teal-300/25 bg-teal-300/12 text-teal-100 shadow-glow">
+        <div className="mx-auto grid h-24 w-24 place-items-center --[2rem] border border-teal-300/25 bg-teal-300/12 text-teal-100 shadow-glow">
           <Flame className="h-12 w-12" />
         </div>
         <h1 className="mt-6 text-4xl font-black text-white">{process.env.NEXT_PUBLIC_APP_NAME ?? "Smoke Monitor"}</h1>

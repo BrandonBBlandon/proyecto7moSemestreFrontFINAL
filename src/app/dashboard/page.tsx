@@ -70,7 +70,7 @@ export default function DashboardPage() {
       type="button"
       onClick={() => void loadData()}
       disabled={refreshing}
-      className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-teal-100 transition hover:bg-white/15 disabled:cursor-wait disabled:opacity-60"
+      className="grid h-11 w-11 place-items-center --2xl bg-white/10 text-teal-100 transition hover:bg-white/15 disabled:cursor-wait disabled:opacity-60"
       title="Actualizar"
     >
       <RefreshCcw className={`h-5 w-5 ${refreshing ? "animate-spin" : ""}`} />

@@ -33,9 +33,9 @@ export default function PerfilPage() {
 
   return (
     <AppShell title="Perfil" subtitle="Sesión local del usuario">
-      <section className="glass-panel rounded-[2rem] p-5">
+      <section className="glass-panel --[2rem] p-5">
         <div className="flex items-center gap-4">
-          <div className="grid h-16 w-16 place-items-center rounded-[1.4rem] bg-teal-300/14 text-teal-100">
+          <div className="grid h-16 w-16 place-items-center --[1.4rem] bg-teal-300/14 text-teal-100">
             <UserRound className="h-8 w-8" />
           </div>
           <div className="min-w-0">
@@ -45,11 +45,11 @@ export default function PerfilPage() {
         </div>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
-          <div className="rounded-2xl bg-white/[0.055] p-4">
+          <div className="--2xl bg-white/[0.055] p-4">
             <p className="text-sm text-slate-400">Tipo de acceso</p>
             <p className="font-bold text-white">Autenticación local</p>
           </div>
-          <div className="rounded-2xl bg-white/[0.055] p-4">
+          <div className="--2xl bg-white/[0.055] p-4">
             <p className="text-sm text-slate-400">Inicio de sesión</p>
             <p className="font-bold text-white">{formatDateTime(session?.createdAt)}</p>
           </div>
@@ -58,7 +58,7 @@ export default function PerfilPage() {
         <button
           type="button"
           onClick={logout}
-          className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-red-400 px-5 py-3 font-black text-red-950 transition hover:bg-red-300"
+          className="mt-6 inline-flex w-full items-center justify-center gap-2 --2xl bg-red-400 px-5 py-3 font-black text-red-950 transition hover:bg-red-300"
         >
           <LogOut className="h-5 w-5" />
           Cerrar sesión

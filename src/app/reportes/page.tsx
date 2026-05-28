@@ -21,14 +21,14 @@ export default function ReportesPage() {
   return (
     <AppShell title="Reportes" subtitle="Indicadores diarios, por rango y mensuales">
       <div className="space-y-4">
-        <div className="grid grid-cols-3 gap-2 rounded-[1.5rem] border border-white/10 bg-white/[0.055] p-2">
+        <div className="grid grid-cols-3 gap-2 --[1.5rem] border border-white/10 bg-white/[0.055] p-2">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               type="button"
               onClick={() => setActiveTab(tab.id)}
               className={clsx(
-                "rounded-2xl px-3 py-3 text-sm font-bold transition",
+                "--2xl px-3 py-3 text-sm font-bold transition",
                 activeTab === tab.id ? "bg-teal-300 text-slate-950" : "text-slate-300 hover:bg-white/10",
               )}
             >

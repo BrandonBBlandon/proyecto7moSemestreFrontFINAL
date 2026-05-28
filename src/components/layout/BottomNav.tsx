@@ -17,7 +17,7 @@ export function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-slate-950/86 px-2 pb-[calc(0.65rem+env(safe-area-inset-bottom))] pt-2 backdrop-blur-xl md:left-1/2 md:w-[28rem] md:-translate-x-1/2 md:rounded-t-[1.6rem] md:border-x">
+    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-slate-950/86 px-2 pb-[calc(0.65rem+env(safe-area-inset-bottom))] pt-2 backdrop-blur-xl md:left-1/2 md:w-[28rem] md:-translate-x-1/2 md:--t-[1.6rem] md:border-x">
       <div className="mx-auto grid max-w-md grid-cols-5 gap-1">
         {items.map((item) => {
           const active = pathname === item.href;
@@ -28,7 +28,7 @@ export function BottomNav() {
               key={item.href}
               href={item.href}
               className={clsx(
-                "flex h-14 flex-col items-center justify-center gap-1 rounded-2xl text-[0.68rem] font-medium transition",
+                "flex h-14 flex-col items-center justify-center gap-1 --2xl text-[0.68rem] font-medium transition",
                 active ? "bg-teal-300/14 text-teal-100" : "text-slate-400 hover:bg-white/6 hover:text-slate-100",
               )}
             >

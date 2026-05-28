@@ -7,7 +7,7 @@ export default function AjustesPage() {
     <AppShell title="Ajustes" subtitle="Conexión, sincronización y dispositivo">
       <div className="grid gap-4 lg:grid-cols-2">
         <SyncSettingsPanel />
-        <WifiConfigMockPanel />
+
       </div>
     </AppShell>
   );

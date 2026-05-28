@@ -46,7 +46,7 @@ export function ReportChart(props: ReportChartProps) {
   }
 
   return (
-    <article className="glass-panel rounded-[1.75rem] p-4">
+    <article className="glass-panel --[1.75rem] p-4">
       <div className="mb-4">
         <h3 className="text-lg font-bold text-white">Gráfica del reporte</h3>
         <p className="text-sm text-slate-400">

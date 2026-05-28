@@ -2,7 +2,7 @@
 
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Flame, LogIn } from "lucide-react";
+import { Flag, Flame, LogIn, Monitor } from "lucide-react";
 import { SESSION_KEY } from "@/components/layout/AppShell";
 
 export default function LoginPage() {
@@ -36,13 +36,13 @@ export default function LoginPage() {
 
   return (
     <main className="grid min-h-dvh place-items-center px-4 py-8">
-      <section className="w-full max-w-md rounded-[2rem] border border-white/10 bg-slate-950/72 p-5 shadow-soft backdrop-blur-xl">
+      <section className="w-full max-w-md [2rem] border border-white/10 bg-slate-950/72 p-5 shadow-soft backdrop-blur-xl">
         <div className="mb-8 text-center">
-          <div className="mx-auto grid h-20 w-20 place-items-center rounded-[1.75rem] bg-teal-300/14 text-teal-100">
-            <Flame className="h-10 w-10" />
+          <div className="mx-auto grid h-20 w-20 place-items-center [1.75rem] bg-teal-300/14 text-teal-100">
+            <Monitor className="h-10 w-10" />
           </div>
-          <h1 className="mt-5 text-3xl font-black text-white">{process.env.NEXT_PUBLIC_APP_NAME ?? "Smoke Monitor"}</h1>
-          <p className="mt-2 text-sm text-slate-400">Acceso local para el panel académico de monitoreo.</p>
+          <h1 className="mt-5 text-3xl font-black text-white">{process.env.NEXT_PUBLIC_APP_NAME ?? "Monitoreo de Humo"}</h1>
+          <p className="mt-2 text-sm text-slate-400">iniciar sesion para  ver las estadisiticas</p>
         </div>
 
         <form onSubmit={onSubmit} className="space-y-4">
@@ -54,7 +54,7 @@ export default function LoginPage() {
                 setUsername(event.target.value);
                 setError("");
               }}
-              className="w-full rounded-2xl border-white/10 bg-slate-900/80 px-4 py-3 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
+              className="w-full --2xl border-white/10 bg-slate-900/80 px-4 py-3 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
               placeholder="estudiante"
               autoComplete="username"
             />
@@ -68,18 +68,17 @@ export default function LoginPage() {
                 setPassword(event.target.value);
                 setError("");
               }}
-              className="w-full rounded-2xl border-white/10 bg-slate-900/80 px-4 py-3 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
+              className="w-full --2xl border-white/10 bg-slate-900/80 px-4 py-3 text-white placeholder:text-slate-600 focus:border-teal-300 focus:ring-teal-300"
               placeholder="••••••••"
               autoComplete="current-password"
             />
           </label>
-          {error ? <p className="rounded-2xl bg-red-500/12 px-4 py-3 text-sm text-red-100">{error}</p> : null}
+          {error ? <p className="--2xl bg-red-500/12 px-4 py-3 text-sm text-red-100">{error}</p> : null}
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-teal-300 px-5 py-3 font-black text-slate-950 transition hover:bg-teal-200"
+            className="inline-flex w-full items-center justify-center gap-2 --2xl bg-teal-300 px-5 py-3 font-black text-slate-950 transition hover:bg-teal-200"
           >
-            <LogIn className="h-5 w-5" />
-            Entrar
+            Iniciar Sesion
           </button>
         </form>
       </section>
